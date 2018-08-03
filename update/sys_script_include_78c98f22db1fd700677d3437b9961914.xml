@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_cion_citrix_it_s.CTXADGroup</api_name>
+        <client_callable>false</client_callable>
+        <description/>
+        <name>CTXADGroup</name>
+        <script><![CDATA[var CTXADGroup = Class.create();
+CTXADGroup.prototype = {
+    initialize: function() {		
+		
+    },
+	
+	createGroup:function(name){
+		var adGrp = new GlideRecord('x_cion_citrix_it_s_citrix_itsm_ad_groups');
+		adGrp.setValue('name',name);
+		return adGrp.insert();
+	},
+	
+	getGroupByName:function(name){
+		var adGrp = new GlideRecord('x_cion_citrix_it_s_citrix_itsm_ad_groups');
+		adGrp.addQuery('name',name);
+		adGrp.query();
+		
+		return (adGrp.next())?adGrp:null;						
+	},
+	
+	getGroupById:function(sys_id){
+		var adGrp = new GlideRecord('x_cion_citrix_it_s_citrix_itsm_ad_groups');
+		adGrp.get(sys_id);	
+		
+		return (adGrp.isValidRecord())?adGrp:null;	
+	},
+	
+	getGroupNamesBySysIds:function(sys_ids){
+		var names = [];
+		var adGrp;
+		
+		for(var i = 0; i < sys_ids.length; i++){
+			adGrp = this.getGroupById(sys_ids[i]);
+			
+			if(!gs.nil(adGrp)){
+				names.push(adGrp.getValue('name'));
+			}
+		}
+		return names;
+	},
+	
+	processADGroups:function(adGroups){
+		if(gs.nil(adGroups)){
+			return null;
+		}
+		var adGrpsSysIds = '';
+		
+		var adGrp;
+		var adGrpSysId;
+		
+		for(var i = 0; i < adGroups.length; i++){
+			
+			adGrp = this.getGroupByName(adGroups[i]);
+			adGrpSysId = (gs.nil(adGrp))? this.createGroup(adGroups[i]):adGrp.getValue('sys_id');
+			
+			adGrpsSysIds += (adGrpsSysIds == '')? adGrpSysId:","+adGrpSysId;
+		}
+		return adGrpsSysIds;
+	},
+
+    type: 'CTXADGroup'
+};]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-17 21:02:02</sys_created_on>
+        <sys_customer_update>true</sys_customer_update>
+        <sys_id>78c98f22db1fd700677d3437b9961914</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>CTXADGroup</sys_name>
+        <sys_package display_value="Citrix IT Service Management Connector" source="x_cion_citrix_it_s">bb5ca9a2db9bd700677d3437b996190f</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_replace_on_upgrade>false</sys_replace_on_upgrade>
+        <sys_scope display_value="Citrix IT Service Management Connector">bb5ca9a2db9bd700677d3437b996190f</sys_scope>
+        <sys_update_name>sys_script_include_78c98f22db1fd700677d3437b9961914</sys_update_name>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-18 18:41:47</sys_updated_on>
+    </sys_script_include>
+</record_update>
