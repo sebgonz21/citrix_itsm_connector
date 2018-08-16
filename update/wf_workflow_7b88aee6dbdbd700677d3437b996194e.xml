@@ -10,10 +10,10 @@
         <condition/>
         <condition_type/>
         <description/>
-        <expected_sequences>77d32153dbd71b00677d3437b9961941,bbd32153dbd71b00677d3437b9961940,33d32153dbd71b00677d3437b9961946,b3d329dfdb971b00677d3437b9961989,73d32153dbd71b00677d3437b9961943,33d32153dbd71b00677d3437b9961945,73d32153dbd71b00677d3437b9961944,bbd329dfdb971b00677d3437b9961989,7bd32153dbd71b00677d3437b9961944,bbd329dfdb971b00677d3437b9961988,b3d32153dbd71b00677d3437b9961941|77d32153dbd71b00677d3437b9961941,bbd32153dbd71b00677d3437b9961940,33d32153dbd71b00677d3437b9961946,b3d329dfdb971b00677d3437b9961989,73d32153dbd71b00677d3437b9961943,33d32153dbd71b00677d3437b9961945,73d32153dbd71b00677d3437b9961944,bbd329dfdb971b00677d3437b9961989,7bd32153dbd71b00677d3437b9961944</expected_sequences>
+        <expected_sequences>77d32153dbd71b00677d3437b9961941,bbd32153dbd71b00677d3437b9961940,33d32153dbd71b00677d3437b9961946,b3d329dfdb971b00677d3437b9961989,73d32153dbd71b00677d3437b9961943,33d32153dbd71b00677d3437b9961945,73d32153dbd71b00677d3437b9961944,bbd329dfdb971b00677d3437b9961989,7bd32153dbd71b00677d3437b9961944</expected_sequences>
         <expected_time>1970-01-01 14:00:00</expected_time>
         <expected_time_type/>
-        <full_sequences>77d32153dbd71b00677d3437b9961941,bbd32153dbd71b00677d3437b9961940,33d32153dbd71b00677d3437b9961946,b3d329dfdb971b00677d3437b9961989,73d32153dbd71b00677d3437b9961943,b3d32153dbd71b00677d3437b9961940,b3d32153dbd71b00677d3437b9961941|77d32153dbd71b00677d3437b9961941,bbd32153dbd71b00677d3437b9961940,33d32153dbd71b00677d3437b9961946,b3d329dfdb971b00677d3437b9961989,73d32153dbd71b00677d3437b9961943,33d32153dbd71b00677d3437b9961945,7bd32153dbd71b00677d3437b9961942,bbd32153dbd71b00677d3437b9961941|77d32153dbd71b00677d3437b9961941,bbd32153dbd71b00677d3437b9961940,33d32153dbd71b00677d3437b9961946,b3d329dfdb971b00677d3437b9961989,73d32153dbd71b00677d3437b9961943,33d32153dbd71b00677d3437b9961945,7bd32153dbd71b00677d3437b9961942,bbd32153dbd71b00677d3437b9961941,73d32153dbd71b00677d3437b9961942,b3d32153dbd71b00677d3437b9961941|77d32153dbd71b00677d3437b9961941,bbd32153dbd71b00677d3437b9961940,33d32153dbd71b00677d3437b9961946,b3d329dfdb971b00677d3437b9961989,73d32153dbd71b00677d3437b9961943,33d32153dbd71b00677d3437b9961945,73d32153dbd71b00677d3437b9961944,bbd329dfdb971b00677d3437b9961989|77d32153dbd71b00677d3437b9961941,bbd32153dbd71b00677d3437b9961940,33d32153dbd71b00677d3437b9961946,b3d329dfdb971b00677d3437b9961989,73d32153dbd71b00677d3437b9961943,33d32153dbd71b00677d3437b9961945,73d32153dbd71b00677d3437b9961944,bbd329dfdb971b00677d3437b9961989,7bd32153dbd71b00677d3437b9961944,bbd329dfdb971b00677d3437b9961988,b3d32153dbd71b00677d3437b9961941|77d32153dbd71b00677d3437b9961941,bbd32153dbd71b00677d3437b9961940,33d32153dbd71b00677d3437b9961946,b3d329dfdb971b00677d3437b9961989,73d32153dbd71b00677d3437b9961943,33d32153dbd71b00677d3437b9961945,73d32153dbd71b00677d3437b9961944,bbd329dfdb971b00677d3437b9961989,7bd32153dbd71b00677d3437b9961944</full_sequences>
+        <full_sequences>77d32153dbd71b00677d3437b9961941,bbd32153dbd71b00677d3437b9961940,33d32153dbd71b00677d3437b9961946,b3d329dfdb971b00677d3437b9961989,73d32153dbd71b00677d3437b9961943,33d32153dbd71b00677d3437b9961945,b3d32153dbd71b00677d3437b9961940,73d32153dbd71b00677d3437b9961944,7bd32153dbd71b00677d3437b9961942,b3d32153dbd71b00677d3437b9961941,bbd329dfdb971b00677d3437b9961989,bbd32153dbd71b00677d3437b9961941,7bd32153dbd71b00677d3437b9961944,73d32153dbd71b00677d3437b9961942,bbd329dfdb971b00677d3437b9961988</full_sequences>
         <journal/>
         <max_activity_count>100</max_activity_count>
         <name>CTX Application Provisioning</name>
@@ -32,9 +32,9 @@
         <sys_created_by>sebastiang</sys_created_by>
         <sys_created_on>2018-07-19 21:25:39</sys_created_on>
         <sys_id>67d329dfdb971b00677d3437b9961987</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>sebastiang</sys_updated_by>
-        <sys_updated_on>2018-07-19 21:26:36</sys_updated_on>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-08-08 07:08:27</sys_updated_on>
         <table>sc_req_item</table>
         <timezone/>
         <validated>true</validated>
@@ -172,6 +172,61 @@
         <x>541</x>
         <y>40</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=33d32153dbd71b00677d3437b9961945"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33d32153dbd71b00677d3437b9961945</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>37d32153dbd71b00677d3437b9961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33d32153dbd71b00677d3437b9961945</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>73d32153dbd71b00677d3437b9961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33d32153dbd71b00677d3437b9961945</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>f7d32153dbd71b00677d3437b9961945</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>answer = ifScript();&#13;
+&#13;
+function ifScript() {&#13;
+	&#13;
+	var access = workflow.scratchpad.accessRecord;&#13;
+	&#13;
+	if (!gs.nil(access.ad_group)){&#13;
+		workflow.scratchpad.adgrp_group = access.ad_group;&#13;
+		return 'yes';&#13;
+	}&#13;
+	return 'no';&#13;
+}&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>33d32153dbd71b00677d3437b9961945</document_key>
@@ -296,6 +351,21 @@ function ifScript() {&#13;
         <x>723</x>
         <y>434</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=73d32153dbd71b00677d3437b9961942"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>73d32153dbd71b00677d3437b9961942</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>b3d32153dbd71b00677d3437b9961942</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>work_notes=Unable to add user to Delivery Group, please review logs^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>73d32153dbd71b00677d3437b9961942</document_key>
@@ -359,6 +429,21 @@ function ifScript() {&#13;
         <x>979</x>
         <y>446</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=bbd329dfdb971b00677d3437b9961988"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bbd329dfdb971b00677d3437b9961988</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>fbd329dfdb971b00677d3437b9961988</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>work_notes=Unable to add user to AD security group, please review logs^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>bbd329dfdb971b00677d3437b9961988</document_key>
@@ -422,6 +507,7 @@ function ifScript() {&#13;
         <x>598</x>
         <y>317</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=bbd32153dbd71b00677d3437b9961941"/>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Add User to Delivery Group">bbd32153dbd71b00677d3437b9961941</activity>
         <condition>activityOutput.result == 'failure'</condition>
@@ -492,6 +578,7 @@ function ifScript() {&#13;
         <x>1021</x>
         <y>311</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=7bd32153dbd71b00677d3437b9961944"/>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Add user to group">7bd32153dbd71b00677d3437b9961944</activity>
         <condition/>
@@ -562,6 +649,7 @@ function ifScript() {&#13;
         <x>20</x>
         <y>20</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=77d32153dbd71b00677d3437b9961941"/>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Begin">77d32153dbd71b00677d3437b9961941</activity>
         <condition>true</condition>
@@ -611,6 +699,7 @@ function ifScript() {&#13;
         <x>381</x>
         <y>602</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b3d32153dbd71b00677d3437b9961941"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -639,6 +728,26 @@ function ifScript() {&#13;
         <x>247</x>
         <y>245</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b3d329dfdb971b00677d3437b9961989"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b3d329dfdb971b00677d3437b9961989</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>f3d329dfdb971b00677d3437b9961989</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>(function(){&#13;
+	&#13;
+	var accessUtil = new CTXAccess();	&#13;
+	var accessRecords = accessUtil.getAccessRecordData(current.getValue('sys_id'));&#13;
+	workflow.scratchpad.accessRecords = accessRecords;&#13;
+})();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>b3d329dfdb971b00677d3437b9961989</document_key>
@@ -707,6 +816,36 @@ function ifScript() {&#13;
         <x>556</x>
         <y>177</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=7bd32153dbd71b00677d3437b9961942"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>7bd32153dbd71b00677d3437b9961942</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>bbd32153dbd71b00677d3437b9961942</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:57</sys_updated_on>
+        <value>(function(){&#13;
+	&#13;
+	var access = workflow.scratchpad.accessRecord;&#13;
+	&#13;
+	workflow.scratchpad.delivery_group = access.desktop_group;&#13;
+	workflow.scratchpad.site_id = access.site_id;&#13;
+	workflow.scratchpad.users = '';&#13;
+	var users = access.users;&#13;
+	&#13;
+	var temp = [];&#13;
+	for(var i = 0; i &lt; users.length; i++){&#13;
+		temp.push(users[i].sys_id);&#13;
+	}&#13;
+&#13;
+	workflow.scratchpad.users = temp.join();&#13;
+})();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>7bd32153dbd71b00677d3437b9961942</document_key>
@@ -785,6 +924,35 @@ function ifScript() {&#13;
         <x>821</x>
         <y>70</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=73d32153dbd71b00677d3437b9961944"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>73d32153dbd71b00677d3437b9961944</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>b3d32153dbd71b00677d3437b9961944</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>(function(){&#13;
+	&#13;
+	var record = workflow.scratchpad.accessRecord;&#13;
+	&#13;
+	var users = record.users;&#13;
+	&#13;
+	var userUtil = new CTXUserTools();&#13;
+	&#13;
+	for(var i = 0; i &lt; users.length; i++){&#13;
+		users[i].ldap_server = userUtil.getUserLDAPServer(users[i].sys_id);&#13;
+		users[i].user_name = userUtil.getUserName(users[i].sys_id);&#13;
+	}&#13;
+	&#13;
+	workflow.scratchpad.adgrp_users = users;&#13;
+})();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>73d32153dbd71b00677d3437b9961944</document_key>
@@ -862,6 +1030,58 @@ function ifScript() {&#13;
         <x>302</x>
         <y>7</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=73d32153dbd71b00677d3437b9961943"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>73d32153dbd71b00677d3437b9961943</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>3bd32153dbd71b00677d3437b9961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>answer = ifScript();&#13;
+&#13;
+function ifScript() {&#13;
+	if (workflow.scratchpad.accessRecords.length &gt; 0) {&#13;
+		workflow.scratchpad.accessRecord = workflow.scratchpad.accessRecords.pop();&#13;
+		return 'yes';&#13;
+	}&#13;
+	return 'no';&#13;
+}&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>73d32153dbd71b00677d3437b9961943</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>77d32153dbd71b00677d3437b9961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>73d32153dbd71b00677d3437b9961943</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>b3d32153dbd71b00677d3437b9961943</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>73d32153dbd71b00677d3437b9961943</document_key>
@@ -983,6 +1203,58 @@ function ifScript() {&#13;
         <x>843</x>
         <y>201</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=bbd329dfdb971b00677d3437b9961989"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bbd329dfdb971b00677d3437b9961989</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>73d329dfdb971b00677d3437b996198a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>answer = ifScript();&#13;
+&#13;
+function ifScript() {&#13;
+	if (workflow.scratchpad.adgrp_users.length &gt; 0) {&#13;
+		workflow.scratchpad.adgrp_user = workflow.scratchpad.adgrp_users.pop();&#13;
+		return 'yes';&#13;
+	}&#13;
+	return 'no';&#13;
+}&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bbd329dfdb971b00677d3437b9961989</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>bfd329dfdb971b00677d3437b9961989</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bbd329dfdb971b00677d3437b9961989</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>fbd329dfdb971b00677d3437b9961989</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>bbd329dfdb971b00677d3437b9961989</document_key>
@@ -1104,6 +1376,21 @@ function ifScript() {&#13;
         <x>248</x>
         <y>362</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b3d32153dbd71b00677d3437b9961940"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b3d32153dbd71b00677d3437b9961940</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>f3d32153dbd71b00677d3437b9961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>state=3^close_notes=Applications have been provisioned^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>b3d32153dbd71b00677d3437b9961940</document_key>
@@ -1167,6 +1454,21 @@ function ifScript() {&#13;
         <x>31</x>
         <y>125</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=bbd32153dbd71b00677d3437b9961940"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>bbd32153dbd71b00677d3437b9961940</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>fbd32153dbd71b00677d3437b9961940</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>state=1^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>bbd32153dbd71b00677d3437b9961940</document_key>
@@ -1230,6 +1532,37 @@ function ifScript() {&#13;
         <x>23</x>
         <y>231</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=33d32153dbd71b00677d3437b9961946"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33d32153dbd71b00677d3437b9961946</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>37d32153dbd71b00677d3437b9961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>state=2^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>33d32153dbd71b00677d3437b9961946</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:25:39</sys_created_on>
+        <sys_id>73d32153dbd71b00677d3437b9961946</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:25:39</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>33d32153dbd71b00677d3437b9961946</document_key>

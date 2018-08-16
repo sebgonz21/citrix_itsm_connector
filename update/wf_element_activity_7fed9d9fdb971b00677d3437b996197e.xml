@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="wf_element_activity">
-    <wf_element_activity action="UPDATE">
+    <wf_element_activity action="INSERT_OR_UPDATE">
         <access>public</access>
         <attributes/>
         <base_provider display_value="Run Script">d0c7fe11eb013100fc5e8a7af106fee0</base_provider>
@@ -58,4 +58,58 @@
         <version_container_id>620edd1fdb971b00677d3437b99619ce</version_container_id>
     </wf_element_activity>
     <sys_translated_text action="delete_multiple" query="documentkey=7fed9d9fdb971b00677d3437b996197e"/>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>false</published>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:00:10</sys_created_on>
+        <sys_id>6a0edd1fdb971b00677d3437b99619ce</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-08-02 21:25:38</sys_updated_on>
+        <valid_from>2018-07-19 21:01:49</valid_from>
+        <valid_to/>
+        <version>1</version>
+        <version_container_id>620edd1fdb971b00677d3437b99619ce</version_container_id>
+        <wf_element_definition display_value="Reset User Session">7fed9d9fdb971b00677d3437b996197e</wf_element_definition>
+    </wf_versionable>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Reset User Session">7fed9d9fdb971b00677d3437b996197e</activity_definition>
+        <condition>activityOutput.result == 'success'</condition>
+        <derived_definition/>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Success</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:01:39</sys_created_on>
+        <sys_id>6d1e999fdb971b00677d3437b99619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:01:39</sys_updated_on>
+    </wf_condition_default>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Reset User Session">7fed9d9fdb971b00677d3437b996197e</activity_definition>
+        <condition>activityOutput.result == 'failure'</condition>
+        <derived_definition/>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Failure</name>
+        <order/>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 21:01:39</sys_created_on>
+        <sys_id>fa4e199fdb971b00677d3437b9961901</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 21:01:39</sys_updated_on>
+    </wf_condition_default>
 </record_update>

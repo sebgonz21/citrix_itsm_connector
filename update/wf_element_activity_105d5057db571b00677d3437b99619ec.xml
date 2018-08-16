@@ -114,17 +114,15 @@ site_id: id of the site related to the delivery group</description>
         <sys_updated_by>sebastiang</sys_updated_by>
         <sys_updated_on>2018-07-19 16:17:24</sys_updated_on>
     </wf_condition_default>
-    <wf_versionable action="update_multiple" query="version_container_id=b73c5417db571b00677d3437b996197c^sys_id!=545d5057db571b00677d3437b99619ec">
+    <wf_versionable action="update_multiple" query="version_container_id=b73c5417db571b00677d3437b996197c^sys_id!=545d5057db571b00677d3437b99619ec^version&lt;2">
         <published>false</published>
     </wf_versionable>
-    <wf_activity action="update_multiple" is_dot_walk_query="true" query="workflow_version.published=true^activity_definition.version_container_id=b73c5417db571b00677d3437b996197c^pinned=true">
+    <wf_activity action="update_multiple" is_dot_walk_query="true" query="workflow_version.published=true^activity_definition.version_container_id=b73c5417db571b00677d3437b996197c">
         <new_activity_definition>105d5057db571b00677d3437b99619ec</new_activity_definition>
         <out_of_date>true</out_of_date>
-        <notes>There is a newer version of this activity. To update the activity, check out the workflow, select the activity, right click and select update activity to use the latest version.</notes>
-    </wf_activity>
-    <wf_activity action="update_multiple" is_dot_walk_query="true" query="workflow_version.published=true^activity_definition.version_container_id=b73c5417db571b00677d3437b996197c^pinned=false">
-        <activity_definition>105d5057db571b00677d3437b99619ec</activity_definition>
-        <activity_definition_updated>true</activity_definition_updated>
-        <notes>This activity was updated to a newer version since the workflow was published.</notes>
+        <notes>There is a newer version of this activity.
+
+To update the activity, check out the workflow, select the activity, right click
+and select 'Update activity' to use the latest version, then publish the workflow</notes>
     </wf_activity>
 </record_update>

@@ -13,7 +13,7 @@
         <expected_sequences>c61cedf7dbeb5f00677d3437b996191d,ce1cedf7dbeb5f00677d3437b996191c,0e1cedf7dbeb5f00677d3437b996191d,061cedf7dbeb5f00677d3437b996191e,4a1c293bdbeb5f00677d3437b9961929</expected_sequences>
         <expected_time>1970-01-01 14:00:00</expected_time>
         <expected_time_type/>
-        <full_sequences>c61cedf7dbeb5f00677d3437b996191d,ce1cedf7dbeb5f00677d3437b996191c,0e1cedf7dbeb5f00677d3437b996191d,061cedf7dbeb5f00677d3437b996191e,4a1c293bdbeb5f00677d3437b9961929|c61cedf7dbeb5f00677d3437b996191d,ce1cedf7dbeb5f00677d3437b996191c,0e1cedf7dbeb5f00677d3437b996191d,061cedf7dbeb5f00677d3437b996191e,8a1c293bdbeb5f00677d3437b9961928,421c293bdbeb5f00677d3437b9961929,4a1c293bdbeb5f00677d3437b9961929|c61cedf7dbeb5f00677d3437b996191d,ce1cedf7dbeb5f00677d3437b996191c,0e1cedf7dbeb5f00677d3437b996191d,061cedf7dbeb5f00677d3437b996191e,8a1c293bdbeb5f00677d3437b9961928,4a1c293bdbeb5f00677d3437b9961929</full_sequences>
+        <full_sequences>c61cedf7dbeb5f00677d3437b996191d,ce1cedf7dbeb5f00677d3437b996191c,0e1cedf7dbeb5f00677d3437b996191d,061cedf7dbeb5f00677d3437b996191e,4a1c293bdbeb5f00677d3437b9961929,8a1c293bdbeb5f00677d3437b9961928,421c293bdbeb5f00677d3437b9961929</full_sequences>
         <journal/>
         <max_activity_count>100</max_activity_count>
         <name>CTX Session Reset</name>
@@ -32,9 +32,9 @@
         <sys_created_by>sebastiang</sys_created_by>
         <sys_created_on>2018-08-02 21:34:14</sys_created_on>
         <sys_id>8a1cedf7dbeb5f00677d3437b996191b</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_updated_by>user14</sys_updated_by>
-        <sys_updated_on>2018-08-02 21:39:46</sys_updated_on>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-08-08 07:08:27</sys_updated_on>
         <table>sc_req_item</table>
         <timezone/>
         <validated>true</validated>
@@ -172,6 +172,7 @@
         <x>20</x>
         <y>20</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=c61cedf7dbeb5f00677d3437b996191d"/>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Begin">c61cedf7dbeb5f00677d3437b996191d</activity>
         <condition>true</condition>
@@ -221,6 +222,57 @@
         <x>106</x>
         <y>163</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=061cedf7dbeb5f00677d3437b996191e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>061cedf7dbeb5f00677d3437b996191e</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-08-02 21:34:14</sys_created_on>
+        <sys_id>421c293bdbeb5f00677d3437b9961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-08-02 21:34:14</sys_updated_on>
+        <value>answer = ifScript();&#13;
+&#13;
+function ifScript() {&#13;
+	if (workflow.scratchpad.sessionError == '') {&#13;
+		return 'no';&#13;
+	}&#13;
+	return 'yes';&#13;
+}&#13;
+</value>
+        <variable display_value="">c35e50810a0a0ba96248a709b450fc32</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>061cedf7dbeb5f00677d3437b996191e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-08-02 21:34:14</sys_created_on>
+        <sys_id>461cedf7dbeb5f00677d3437b996191e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-08-02 21:34:14</sys_updated_on>
+        <value/>
+        <variable display_value="">493cba6a0a6a803f07df24b118473551</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>061cedf7dbeb5f00677d3437b996191e</document_key>
+        <order>200</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-08-02 21:34:14</sys_created_on>
+        <sys_id>8e1c293bdbeb5f00677d3437b9961927</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-08-02 21:34:14</sys_updated_on>
+        <value>1</value>
+        <variable display_value="">493d2c1d0a6a803f3217a75738ea3289</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>061cedf7dbeb5f00677d3437b996191e</document_key>
@@ -341,6 +393,7 @@ function ifScript() {&#13;
         <x>326</x>
         <y>441</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=4a1c293bdbeb5f00677d3437b9961929"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -369,6 +422,35 @@ function ifScript() {&#13;
         <x>331</x>
         <y>10</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=0e1cedf7dbeb5f00677d3437b996191d"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>0e1cedf7dbeb5f00677d3437b996191d</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-08-02 21:34:14</sys_created_on>
+        <sys_id>4e1cedf7dbeb5f00677d3437b996191d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-08-02 21:34:14</sys_updated_on>
+        <value>(function(){&#13;
+	&#13;
+	workflow.scratchpad.sessionError = '';&#13;
+	&#13;
+	var sessionStr = current.variables.chosen_session;&#13;
+	&#13;
+	try{&#13;
+		var session = JSON.parse(sessionStr);&#13;
+		workflow.scratchpad.site_id = session.SiteId;&#13;
+		workflow.scratchpad.session_id = session.SessionKey;&#13;
+	}catch(error){&#13;
+		workflow.scratchpad.sessionError = error;&#13;
+	}&#13;
+	&#13;
+})();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>0e1cedf7dbeb5f00677d3437b996191d</document_key>
@@ -446,6 +528,21 @@ function ifScript() {&#13;
         <x>124</x>
         <y>18</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=ce1cedf7dbeb5f00677d3437b996191c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>ce1cedf7dbeb5f00677d3437b996191c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-08-02 21:34:14</sys_created_on>
+        <sys_id>021cedf7dbeb5f00677d3437b996191d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-08-02 21:34:14</sys_updated_on>
+        <value>approved</value>
+        <variable display_value="">50ab35f70a6a803f76d36e1ebaf3639e</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>ce1cedf7dbeb5f00677d3437b996191c</document_key>
@@ -509,6 +606,7 @@ function ifScript() {&#13;
         <x>623</x>
         <y>90</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=8a1c293bdbeb5f00677d3437b9961928"/>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Session Reset">8a1c293bdbeb5f00677d3437b9961928</activity>
         <condition>activityOutput.result == 'failure'</condition>
@@ -579,6 +677,21 @@ function ifScript() {&#13;
         <x>431</x>
         <y>283</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=421c293bdbeb5f00677d3437b9961929"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>421c293bdbeb5f00677d3437b9961929</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-08-02 21:34:14</sys_created_on>
+        <sys_id>821c293bdbeb5f00677d3437b9961929</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-08-02 21:34:14</sys_updated_on>
+        <value>close_notes=Session has been reset^state=3^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>421c293bdbeb5f00677d3437b9961929</document_key>

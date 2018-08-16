@@ -5,6 +5,7 @@
         <applies_catalog>true</applies_catalog>
         <applies_req_item>true</applies_req_item>
         <applies_sc_task>true</applies_sc_task>
+        <applies_target_record>false</applies_target_record>
         <applies_to>item</applies_to>
         <catalog_conditions/>
         <catalog_item display_value="Reset a session">a2cdbde6db9bd700677d3437b9961976</catalog_item>

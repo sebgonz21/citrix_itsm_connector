@@ -8,6 +8,7 @@
         <grantable>true</grantable>
         <includes_roles/>
         <name>x_cion_citrix_it_s.ctx_itsm_admin</name>
+        <scoped_admin>false</scoped_admin>
         <suffix>ctx_itsm_admin</suffix>
         <sys_class_name>sys_user_role</sys_class_name>
         <sys_created_by>sebastiang</sys_created_by>

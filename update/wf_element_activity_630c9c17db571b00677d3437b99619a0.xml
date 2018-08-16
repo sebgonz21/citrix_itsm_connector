@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <record_update table="wf_element_activity">
-    <wf_element_activity action="UPDATE">
+    <wf_element_activity action="INSERT_OR_UPDATE">
         <access>public</access>
         <attributes/>
         <base_provider display_value="Run Script">d0c7fe11eb013100fc5e8a7af106fee0</base_provider>
@@ -60,4 +60,58 @@ site_id: id of the site related to the delivery group</description>
         <version_container_id>b73c5417db571b00677d3437b996197c</version_container_id>
     </wf_element_activity>
     <sys_translated_text action="delete_multiple" query="documentkey=630c9c17db571b00677d3437b99619a0"/>
+    <wf_versionable action="INSERT_OR_UPDATE">
+        <checked_out/>
+        <checked_out_by/>
+        <published>false</published>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 16:12:43</sys_created_on>
+        <sys_id>bf3c5417db571b00677d3437b996197c</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 16:20:32</sys_updated_on>
+        <valid_from>2018-07-19 16:15:16</valid_from>
+        <valid_to/>
+        <version>1</version>
+        <version_container_id>b73c5417db571b00677d3437b996197c</version_container_id>
+        <wf_element_definition display_value="Add Users to Delivery Group">630c9c17db571b00677d3437b99619a0</wf_element_definition>
+    </wf_versionable>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Add Users to Delivery Group">630c9c17db571b00677d3437b99619a0</activity_definition>
+        <condition>activityOutput.result == 'success'</condition>
+        <derived_definition/>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Success</name>
+        <order>0</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 16:15:02</sys_created_on>
+        <sys_id>3d4c1417db571b00677d3437b9961921</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 16:15:02</sys_updated_on>
+    </wf_condition_default>
+    <wf_condition_default action="INSERT_OR_UPDATE">
+        <activity_definition display_value="Add Users to Delivery Group">630c9c17db571b00677d3437b99619a0</activity_definition>
+        <condition>activityOutput.result == 'failure'</condition>
+        <derived_definition/>
+        <else_flag>false</else_flag>
+        <error>false</error>
+        <event>false</event>
+        <event_name/>
+        <name>Failure</name>
+        <order>10</order>
+        <short_description/>
+        <skip_during_generate>false</skip_during_generate>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 16:15:02</sys_created_on>
+        <sys_id>6aacdcd3db571b00677d3437b99619f6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 16:15:02</sys_updated_on>
+    </wf_condition_default>
 </record_update>

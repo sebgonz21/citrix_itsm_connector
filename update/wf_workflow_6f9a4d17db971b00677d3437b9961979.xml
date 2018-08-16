@@ -10,10 +10,10 @@
         <condition/>
         <condition_type/>
         <description/>
-        <expected_sequences>a79a8957db971b00677d3437b99619d6,05ca8957db971b00677d3437b99619b0,a7fac557db971b00677d3437b99619f1,093b0957db971b00677d3437b9961948,ddaf4197db971b00677d3437b99619a8,faef0597db971b00677d3437b99619d5,ab9a8957db971b00677d3437b99619d6|a79a8957db971b00677d3437b99619d6,05ca8957db971b00677d3437b99619b0,a7fac557db971b00677d3437b99619f1,093b0957db971b00677d3437b9961948,ddaf4197db971b00677d3437b99619a8,b5105597db971b00677d3437b9961929</expected_sequences>
+        <expected_sequences>a79a8957db971b00677d3437b99619d6,05ca8957db971b00677d3437b99619b0,a7fac557db971b00677d3437b99619f1,093b0957db971b00677d3437b9961948,ddaf4197db971b00677d3437b99619a8,faef0597db971b00677d3437b99619d5,ab9a8957db971b00677d3437b99619d6</expected_sequences>
         <expected_time>1970-01-01 14:00:00</expected_time>
         <expected_time_type/>
-        <full_sequences>a79a8957db971b00677d3437b99619d6,05ca8957db971b00677d3437b99619b0,a7fac557db971b00677d3437b99619f1,093b0957db971b00677d3437b9961948,ddaf4197db971b00677d3437b99619a8,faef0597db971b00677d3437b99619d5,ab9a8957db971b00677d3437b99619d6|a79a8957db971b00677d3437b99619d6,05ca8957db971b00677d3437b99619b0,a7fac557db971b00677d3437b99619f1,093b0957db971b00677d3437b9961948,ddaf4197db971b00677d3437b99619a8,b5105597db971b00677d3437b9961929,ab9a8957db971b00677d3437b99619d6</full_sequences>
+        <full_sequences>a79a8957db971b00677d3437b99619d6,05ca8957db971b00677d3437b99619b0,a7fac557db971b00677d3437b99619f1,093b0957db971b00677d3437b9961948,ddaf4197db971b00677d3437b99619a8,faef0597db971b00677d3437b99619d5,b5105597db971b00677d3437b9961929,ab9a8957db971b00677d3437b99619d6</full_sequences>
         <journal/>
         <max_activity_count>100</max_activity_count>
         <name>CTX Desktop Provisioning</name>
@@ -32,9 +32,9 @@
         <sys_created_by>sebastiang</sys_created_by>
         <sys_created_on>2018-07-19 19:35:19</sys_created_on>
         <sys_id>7a7a4957db971b00677d3437b99619ed</sys_id>
-        <sys_mod_count>17</sys_mod_count>
-        <sys_updated_by>user34</sys_updated_by>
-        <sys_updated_on>2018-07-19 20:38:46</sys_updated_on>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_updated_by>system</sys_updated_by>
+        <sys_updated_on>2018-08-08 07:08:27</sys_updated_on>
         <table>sc_req_item</table>
         <timezone/>
         <validated>true</validated>
@@ -172,6 +172,21 @@
         <x>666</x>
         <y>380</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=b5105597db971b00677d3437b9961929"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>b5105597db971b00677d3437b9961929</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 19:59:43</sys_created_on>
+        <sys_id>f030d1d7db971b00677d3437b9961996</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 19:59:43</sys_updated_on>
+        <value>work_notes=Failed to add user to Desktop Group, review logs for errors^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>b5105597db971b00677d3437b9961929</document_key>
@@ -235,6 +250,7 @@
         <x>676</x>
         <y>191</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=ddaf4197db971b00677d3437b99619a8"/>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Add User To Desktop Group">ddaf4197db971b00677d3437b99619a8</activity>
         <condition>activityOutput.result == 'failure'</condition>
@@ -305,6 +321,7 @@
         <x>20</x>
         <y>20</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a79a8957db971b00677d3437b99619d6"/>
     <wf_condition action="INSERT_OR_UPDATE">
         <activity display_value="Begin">a79a8957db971b00677d3437b99619d6</activity>
         <condition>true</condition>
@@ -354,6 +371,7 @@
         <x>1137</x>
         <y>486</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=ab9a8957db971b00677d3437b99619d6"/>
     <wf_activity action="INSERT_OR_UPDATE">
         <activity_definition display_value="Run Script">db8c65aec0a8016501d00259bc7203a4</activity_definition>
         <activity_definition_updated>false</activity_definition_updated>
@@ -382,6 +400,37 @@
         <x>657</x>
         <y>34</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=093b0957db971b00677d3437b9961948"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>093b0957db971b00677d3437b9961948</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 19:38:18</sys_created_on>
+        <sys_id>934b4157db971b00677d3437b99619d5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 19:56:47</sys_updated_on>
+        <value>(function(){&#13;
+	&#13;
+	var userUtil = new CTXUserTools();&#13;
+	&#13;
+	var accessUtil = new CTXAccess();	&#13;
+	var accessRecords = accessUtil.getAccessRecordData(current.getValue('sys_id'));&#13;
+	&#13;
+	var access = accessRecords[0];&#13;
+	var user =  access.users[0];&#13;
+	&#13;
+	workflow.scratchpad.desktop_group = access.desktop_group;&#13;
+	workflow.scratchpad.site_id = access.site_id;&#13;
+	workflow.scratchpad.user_name = userUtil.getUserName(user.sys_id);&#13;
+&#13;
+	&#13;
+	&#13;
+})();</value>
+        <variable display_value="">c35ddef20a0a0ba96248a7090eccd518</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>093b0957db971b00677d3437b9961948</document_key>
@@ -461,6 +510,21 @@
         <x>914</x>
         <y>307</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=faef0597db971b00677d3437b99619d5"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>faef0597db971b00677d3437b99619d5</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 19:59:02</sys_created_on>
+        <sys_id>0f00d1d7db971b00677d3437b99619ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 19:59:02</sys_updated_on>
+        <value>state=3^close_notes=Desktop has been provisioned^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>faef0597db971b00677d3437b99619d5</document_key>
@@ -524,6 +588,21 @@
         <x>173</x>
         <y>27</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=05ca8957db971b00677d3437b99619b0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>05ca8957db971b00677d3437b99619b0</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 19:36:11</sys_created_on>
+        <sys_id>d8da8557db971b00677d3437b9961928</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 19:36:11</sys_updated_on>
+        <value>state=1^EQ</value>
+        <variable display_value="">1cb38c8f0a0a0b266fb48e08de35f507</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>05ca8957db971b00677d3437b99619b0</document_key>
@@ -587,6 +666,37 @@
         <x>411</x>
         <y>32</y>
     </wf_activity>
+    <sys_variable_value action="delete_multiple" query="document_key=a7fac557db971b00677d3437b99619f1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7fac557db971b00677d3437b99619f1</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 19:37:08</sys_created_on>
+        <sys_id>920b8957db971b00677d3437b99619b7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 19:37:08</sys_updated_on>
+        <value>state=2^EQ</value>
+        <variable display_value="">c35dc4cd0a0a0ba96248a70990c1ac54</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>wf_activity</document>
+        <document_key>a7fac557db971b00677d3437b99619f1</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>sebastiang</sys_created_by>
+        <sys_created_on>2018-07-19 19:37:08</sys_created_on>
+        <sys_id>de0b8957db971b00677d3437b99619b6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sebastiang</sys_updated_by>
+        <sys_updated_on>2018-07-19 19:37:08</sys_updated_on>
+        <value>// Set the variable 'answer' to true or false to indicate if the condition has been met or not.&#13;
+answer = true;&#13;
+</value>
+        <variable display_value="">c35debce0a0a0ba96248a709440cf31a</variable>
+    </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>wf_activity</document>
         <document_key>a7fac557db971b00677d3437b99619f1</document_key>
