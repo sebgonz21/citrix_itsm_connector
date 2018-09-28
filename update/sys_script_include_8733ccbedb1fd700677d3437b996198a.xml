@@ -57,17 +57,17 @@ CTXOSConfiguration.prototype = {
 		var name = osConfigObject.Name;
 		
 		var deskGrpUtil = new CTXDesktopGroup();		
-		var desktopGroupSysId = deskGrpUtil.processDesktopGroups([osConfigObject.DesktopGroup]);				
+		var desktopGroupSysIds = deskGrpUtil.processDesktopGroups([osConfigObject.DesktopGroup]);				
 		
-		var currentDeskGrps = configRecord.getValue('desktop_groups');
+		var machCatUtil = new CTXMachineCatalog();
+		var catalogSysId  = machCatUtil.processCatalog(osConfigObject.Catalog);
 		
-		if(!gs.nil(currentDeskGrps)){
-			if(currentDeskGrps.indexOf(desktopGroupSysId) < 0){
-				configRecord.setValue('desktop_groups',currentDeskGrps+","+desktopGroupSysId);
-			}			
-		}else{
-			configRecord.setValue('desktop_groups',desktopGroupSysId);
-		}
+		var siteUtil = new CTXSite();
+		var siteSysId = siteUtil.processSite(osConfigObject.SiteName,osConfigObject.SiteId);
+		
+		configRecord.setValue('desktop_groups',desktopGroupSysIds);
+		configRecord.setValue('machine_catalog',catalogSysId);
+		configRecord.setValue('site',siteSysId);
 		
 		configRecord.update();
 	},
@@ -205,7 +205,7 @@ CTXOSConfiguration.prototype = {
         <sys_created_on>2018-07-18 01:44:34</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>8733ccbedb1fd700677d3437b996198a</sys_id>
-        <sys_mod_count>27</sys_mod_count>
+        <sys_mod_count>29</sys_mod_count>
         <sys_name>CTXOSConfiguration</sys_name>
         <sys_package display_value="Citrix IT Service Management Connector" source="x_cion_citrix_it_s">bb5ca9a2db9bd700677d3437b996190f</sys_package>
         <sys_policy>read</sys_policy>
@@ -213,6 +213,6 @@ CTXOSConfiguration.prototype = {
         <sys_scope display_value="Citrix IT Service Management Connector">bb5ca9a2db9bd700677d3437b996190f</sys_scope>
         <sys_update_name>sys_script_include_8733ccbedb1fd700677d3437b996198a</sys_update_name>
         <sys_updated_by>sebastiang</sys_updated_by>
-        <sys_updated_on>2018-08-02 18:16:47</sys_updated_on>
+        <sys_updated_on>2018-08-16 18:03:00</sys_updated_on>
     </sys_script_include>
 </record_update>

@@ -10,37 +10,38 @@
         <script><![CDATA[var RESTRequest = Class.create();
 RESTRequest.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 	
-	RESQUEST_TIMEOUT: 80000,
-	
+	REQUEST_TIMEOUT: 180000,
+			
 	get:function(endpoint,requestHeaders){
+
 		var logger = new Logger();
-		
+
 		var rest = new sn_ws.RESTMessageV2();
 		rest.setHttpMethod("GET");
-        rest.setHttpTimeout(this.RESQUEST_TIMEOUT);
+		rest.setHttpTimeout(this.REQUEST_TIMEOUT);
 		rest.setEndpoint(endpoint);        
-		
+
 		for(var header in requestHeaders)
-        {
-            rest.setRequestHeader(header,requestHeaders[header]);
-        }
-        var response = rest.execute();
-	
+		{
+			rest.setRequestHeader(header,requestHeaders[header]);
+		}
+		var response = rest.execute();
+
 		if(response.haveError()){				
 			return response.getErrorMessage();
 		}
+	
 		return response.getBody();		
+							
 	},
 	
 	post:function(endpoint,requestHeaders,requestBody){
 		var logger = new Logger();		
-		
+			
 		var rest = new sn_ws.RESTMessageV2();
 		rest.setHttpMethod("POST");
-        rest.setHttpTimeout(this.RESQUEST_TIMEOUT);
-		rest.setEndpoint(endpoint);    
-		
-		logger.log(JSON.stringify(requestBody));
+        rest.setHttpTimeout(this.REQUEST_TIMEOUT);
+		rest.setEndpoint(endpoint);    				
         		
 		for(var header in requestHeaders)
         {
@@ -56,7 +57,8 @@ RESTRequest.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 			}
 			if(gs.nil(response.getBody()) || response.getBody() == ''){
 				return response.getStatusCode().toString();
-			}
+			}		
+			
 			return response.getBody();		
 		}catch(error){
 			return error;
@@ -64,13 +66,15 @@ RESTRequest.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
        	
 	},
     type: 'RESTRequest'
-});]]></script>
+});
+		
+		]]></script>
         <sys_class_name>sys_script_include</sys_class_name>
         <sys_created_by>sebastiang</sys_created_by>
         <sys_created_on>2018-07-17 17:02:28</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>4254d2e2dbdbd700677d3437b99619f2</sys_id>
-        <sys_mod_count>12</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>RESTRequest</sys_name>
         <sys_package display_value="Citrix IT Service Management Connector" source="x_cion_citrix_it_s">bb5ca9a2db9bd700677d3437b996190f</sys_package>
         <sys_policy>read</sys_policy>
@@ -78,6 +82,6 @@ RESTRequest.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="Citrix IT Service Management Connector">bb5ca9a2db9bd700677d3437b996190f</sys_scope>
         <sys_update_name>sys_script_include_4254d2e2dbdbd700677d3437b99619f2</sys_update_name>
         <sys_updated_by>sebastiang</sys_updated_by>
-        <sys_updated_on>2018-08-02 18:13:37</sys_updated_on>
+        <sys_updated_on>2018-09-25 15:08:14</sys_updated_on>
     </sys_script_include>
 </record_update>

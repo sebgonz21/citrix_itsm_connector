@@ -40,13 +40,13 @@ app.controller('appProvCtrl',function($scope,$http,ajaxCall,$q){
 		}				
 	};
 	
-	var createNewDeliveryGroup = function(app, deliveryGroupName){
+	var createNewDeliveryGroup = function(app, deliveryGroup){
 		var delGrp = {
-			Name:deliveryGroupName,
+			Name:deliveryGroup.Name,
 			SiteName: app.SiteName,
 			SiteId: app.SiteId,
-			ADGroups:{},
-			Applications:{}			
+			ADGroups:deliveryGroup.ADGroups,
+			Applications:deliveryGroup.Applications			
 		};
 		
 		return delGrp;
@@ -65,36 +65,24 @@ app.controller('appProvCtrl',function($scope,$http,ajaxCall,$q){
 		var delGrpId;
 		var app;
 		var adGrps;
+		var appIndex;
 		
 		for(var i = 0; i < chosenApps.length; i++){		
 			app = chosenApps[i];			
 						
 			for(var d = 0;d < app.DesktopGroup.length; d++){
-				delGrpId = app.DesktopGroup[d].Name +"_"+ app.SiteId;
-				adGrps = app.DesktopGroup[d].ADGroups;
+				delGrpId = app.DesktopGroup[d].Name +"_"+ app.SiteId;				
 				
-				if(deliveryGroups[delGrpId]){
-				
-					for(var j = 0; j < adGrps.length; j++){
-						deliveryGroups[delGrpId].ADGroups[adGrps[j]] = adGrps[j];
-					}
-
-					deliveryGroups[delGrpId].Applications[app.Name] = app.Name;
-				}else{
-					delGrp = createNewDeliveryGroup(app,app.DesktopGroup[d].Name);
-					
-					for(var l = 0; l < adGrps.length; l++){
-						delGrp.ADGroups[adGrps[l]] = adGrps[l];
-					}
-
-					delGrp.Applications[app.Name] = app.Name;
+				if(!deliveryGroups[delGrpId]){
+					delGrp = createNewDeliveryGroup(app,app.DesktopGroup[d]);					
 					delGrp.members = {};
-					deliveryGroups[delGrpId] = delGrp;
+					
+					deliveryGroups[delGrpId] = delGrp;										
 				}																				
 				
 			}						
 		}
-		
+	
 		return deliveryGroups;
 		
 	};	
@@ -126,7 +114,7 @@ app.controller('appProvCtrl',function($scope,$http,ajaxCall,$q){
 		var ritm;
 		try{			
 			$scope.record  = JSON.parse(answer);		
-			jslog($scope.record );
+		
 			$scope.users = $scope.record.variables.users.value;
 			$scope.chosenApps = $scope.record.variables.select_applications.value;			
 			$scope.deliveryGroups = getChosenGroups($scope.chosenApps);
@@ -339,16 +327,12 @@ app.directive('groupObject',function(summaryParser,$compile){
 			
 			
 			$scope.openApplicationModal = function(group){
-				
-				var apps = [];
-				for(var app in group.Applications){
-					apps.push(app);
-				}
+							
 				var description = "Following are the applications that are part of";
 				
 				var modalDialog = new GlideModal("x_cion_citrix_it_s_application_modal");
 				modalDialog.setTitle("Applications");				
-				modalDialog.setPreference('apps',apps);	
+				modalDialog.setPreference('apps',group.Applications);	
 				modalDialog.setPreference('description',description);	
 				modalDialog.setPreference('group_name',group.Name);
 				modalDialog.setSize(700, 800);
@@ -391,11 +375,9 @@ app.directive('groupObject',function(summaryParser,$compile){
 });
 
 app.directive('summaryList',function(summaryParser,$compile){
-	var xml;
-	
+	 
 	var html = document.getElementById("summary_list").innerHTML;
 	html = html.substring(2, html.length-2);
-	
 	
 	return {
 		template:html,
@@ -705,7 +687,7 @@ app.directive('summaryList',function(summaryParser,$compile){
         <sys_created_on>2018-07-17 14:39:08</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>8f8fa9e2db9bd700677d3437b9961991</sys_id>
-        <sys_mod_count>97</sys_mod_count>
+        <sys_mod_count>108</sys_mod_count>
         <sys_name>app_provision_view</sys_name>
         <sys_package display_value="Citrix IT Service Management Connector" source="x_cion_citrix_it_s">bb5ca9a2db9bd700677d3437b996190f</sys_package>
         <sys_policy/>
@@ -713,6 +695,6 @@ app.directive('summaryList',function(summaryParser,$compile){
         <sys_scope display_value="Citrix IT Service Management Connector">bb5ca9a2db9bd700677d3437b996190f</sys_scope>
         <sys_update_name>sys_ui_page_8f8fa9e2db9bd700677d3437b9961991</sys_update_name>
         <sys_updated_by>sebastiang</sys_updated_by>
-        <sys_updated_on>2018-08-02 14:41:21</sys_updated_on>
+        <sys_updated_on>2018-08-29 21:02:17</sys_updated_on>
     </sys_ui_page>
 </record_update>

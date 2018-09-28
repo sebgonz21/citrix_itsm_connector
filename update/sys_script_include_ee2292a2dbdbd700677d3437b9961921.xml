@@ -52,7 +52,7 @@ CTXDesktopProvision.prototype = {
 		var osResponse = rest.get(this.GET_OS_ENDPOINT,headers);
 		
 		try{
-			
+		
 			var configs = JSON.parse(osResponse);
 			return configs;
 		}catch(error){
@@ -82,6 +82,8 @@ CTXDesktopProvision.prototype = {
 		var logger = new Logger();
 		
 		var headers = this._generateDefaultHeaders();
+		headers["siteid"] = siteId;
+		
 		var body = this._generateAssignDesktopBody(user,desktopGroup,siteId);
 		var rest = new RESTRequest();
 		
@@ -97,7 +99,7 @@ CTXDesktopProvision.prototype = {
         <sys_created_on>2018-07-17 16:53:36</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>ee2292a2dbdbd700677d3437b9961921</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>11</sys_mod_count>
         <sys_name>CTXDesktopProvision</sys_name>
         <sys_package display_value="Citrix IT Service Management Connector" source="x_cion_citrix_it_s">bb5ca9a2db9bd700677d3437b996190f</sys_package>
         <sys_policy>read</sys_policy>
@@ -105,6 +107,6 @@ CTXDesktopProvision.prototype = {
         <sys_scope display_value="Citrix IT Service Management Connector">bb5ca9a2db9bd700677d3437b996190f</sys_scope>
         <sys_update_name>sys_script_include_ee2292a2dbdbd700677d3437b9961921</sys_update_name>
         <sys_updated_by>sebastiang</sys_updated_by>
-        <sys_updated_on>2018-07-27 19:24:27</sys_updated_on>
+        <sys_updated_on>2018-09-25 17:33:24</sys_updated_on>
     </sys_script_include>
 </record_update>

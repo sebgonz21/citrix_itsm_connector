@@ -8,9 +8,9 @@
         <device_type/>
         <filter/>
         <hint/>
-        <homepage/>
+        <homepage display_value="Citrix IT Service Management Connector Services">ae970e14dbc0a700677d3437b99619e6</homepage>
         <image/>
-        <link_type>DIRECT</link_type>
+        <link_type>HOMEPAGE</link_type>
         <map_page/>
         <mobile_title>Services</mobile_title>
         <mobile_view_name>Mobile</mobile_view_name>
@@ -29,7 +29,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>792ea5e2db9bd700677d3437b996194a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name>Services</sys_name>
         <sys_overrides/>
         <sys_package display_value="Citrix IT Service Management Connector" source="x_cion_citrix_it_s">bb5ca9a2db9bd700677d3437b996190f</sys_package>
@@ -38,7 +38,7 @@
         <sys_scope display_value="Citrix IT Service Management Connector">bb5ca9a2db9bd700677d3437b996190f</sys_scope>
         <sys_update_name>sys_app_module_792ea5e2db9bd700677d3437b996194a</sys_update_name>
         <sys_updated_by>sebastiang</sys_updated_by>
-        <sys_updated_on>2018-07-17 14:18:33</sys_updated_on>
+        <sys_updated_on>2018-08-16 23:11:18</sys_updated_on>
         <timeline_page/>
         <title>Services</title>
         <uncancelable>false</uncancelable>

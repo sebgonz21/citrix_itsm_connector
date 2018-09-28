@@ -140,7 +140,7 @@ app.service('status',function($q){
 			.customer-obj{
 				border: solid #E6E6E6 2px;		
 				margin-left:20px;				
-				min-height:150px;
+				min-height:150px;			
 				padding:0;
 			}
 			.status{
@@ -166,6 +166,7 @@ app.service('status',function($q){
 			}
 			.cloud_button{
 				margin-top:50px;
+				margin-right:30px;
 				padding-left:10px;
 				padding-top:10px;
 			}
@@ -179,7 +180,26 @@ app.service('status',function($q){
 			}
 			.status_icon{
 				margin-top:60px;
-				margin-left:15px;;
+				margin-left:15px;
+			}
+			.customer-obj{
+				position:relative;
+			}
+			
+			@media (max-width: 550px) {
+			
+				.status{
+					min-height:20px;
+					max-width:100%;
+				}
+				img.status_icon{
+					margin-top:10px;
+					margin-bottom:10px;				
+				}
+			
+				.cloud_button{
+					margin-top:0;
+				}
 			}
 		</style>
 	</head>
@@ -199,27 +219,27 @@ app.service('status',function($q){
 
 
 			<div class="col-sm-12">
-				<div id="{{cust.customer_id}}" class="col-sm-11 customer-obj" ng-repeat="cust in customers" ng-cloak="" >
-					<div class="col-sm-1 status">
+				<div id="{{cust.customer_id}}" class="col-sm-11 col-xs-12 customer-obj" ng-repeat="cust in customers" ng-cloak="" >
+					<div class="col-md-1 col-sm-3 col-xs-12 status">
 						<img id="loading_icon" src="loading_status_icon.gif" width="26" height="26" class="status_icon"/>
 						<img id="failure_icon" src="no_connection_icon.png" width="26" height="26" class="status_icon hide"/>
 						<img id="success_icon" src="verify_white_icon.png" width="26" height="26" class="status_icon hide"/>
 					</div>
-					<div class="col-sm-8 info">
-						<div class="col-sm-3 info-text">
+					<div class="col-md-8 col-sm-9 col-xs-12 info">
+						<div class="col-md-4 col-sm-4 col-xs-12 info-text">
 							<b>Customer Name</b>
 							<p>{{cust.display_name}}</p>
 						</div>
-						<div class="col-sm-3 info-text">
+						<div class="col-md-4 col-sm-4 col-xs-12 info-text">
 							<b>Customer ID</b>
 							<p>{{cust.customer_id}}</p>
 						</div>
-						<div class="col-sm-3 info-text">
+						<div class="col-md-4 col-sm-4 col-xs-12 info-text">
 							<b>Organization ID</b>
 							<p>{{cust.organization_id}}</p>
 						</div>
 					</div>
-					<div class="col-sm-3 cloud_button">
+					<div class="cloud_button">
 						<a href="https://citrix.cloud.com/" target="_blank" class="btn btn-md btn-primary goto-cloud-btn">Go to Connector</a>
 					</div>
 				</div>
@@ -236,7 +256,7 @@ app.service('status',function($q){
         <sys_created_on>2018-07-17 16:25:17</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>528b4aeedb9bd700677d3437b9961909</sys_id>
-        <sys_mod_count>11</sys_mod_count>
+        <sys_mod_count>38</sys_mod_count>
         <sys_name>connection_status</sys_name>
         <sys_package display_value="Citrix IT Service Management Connector" source="x_cion_citrix_it_s">bb5ca9a2db9bd700677d3437b996190f</sys_package>
         <sys_policy/>
@@ -244,6 +264,6 @@ app.service('status',function($q){
         <sys_scope display_value="Citrix IT Service Management Connector">bb5ca9a2db9bd700677d3437b996190f</sys_scope>
         <sys_update_name>sys_ui_page_528b4aeedb9bd700677d3437b9961909</sys_update_name>
         <sys_updated_by>sebastiang</sys_updated_by>
-        <sys_updated_on>2018-08-02 18:22:29</sys_updated_on>
+        <sys_updated_on>2018-08-16 21:21:22</sys_updated_on>
     </sys_ui_page>
 </record_update>

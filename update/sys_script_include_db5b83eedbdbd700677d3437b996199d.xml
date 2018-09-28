@@ -14,6 +14,8 @@ CTXDesktopGroup.prototype = {
 	},
 				
 	createGroup:function(groupObject){
+		var logger = new Logger();		
+		
 		var name = groupObject.Name;
 		
 		var adGrpUtil = new CTXADGroup();		
@@ -45,6 +47,7 @@ CTXDesktopGroup.prototype = {
 	getDesktopGroupObject:function(sys_id){
 		var logger = new Logger();
 		var deskGrpRecord = this.getGroupById(sys_id);
+		var appUtil = new CTXApplication();
 		
 		if(gs.nil(deskGrpRecord)){
 			return null;
@@ -54,6 +57,9 @@ CTXDesktopGroup.prototype = {
 			Name:deskGrpRecord.getValue('name'),
 		};
 		
+		var appsInDeskGrp = appUtil.getApplicationsByDesktopGroup(deskGrpRecord.getValue('sys_id'));
+		deskGrp.Applications = appsInDeskGrp;
+		
 		var adGroupsSysIds = deskGrpRecord.getValue('ad_groups');				
 		adGroupsSysIds = (!gs.nil(adGroupsSysIds))? adGroupsSysIds.split(','):[];
 			
@@ -62,6 +68,11 @@ CTXDesktopGroup.prototype = {
 
 		return deskGrp;				 
 		
+	},
+	
+	updateGroup:function(grpRecord,field,value){
+		grpRecord.setValue(field,value);
+		grpRecord.update();		
 	},
 	
 	/********************************************
@@ -74,6 +85,7 @@ CTXDesktopGroup.prototype = {
 		returns sys_id of found/inserted record.
 	********************************************/
 	processDesktopGroups:function(deskGrpObjects){
+		var logger = new Logger();
 		
 		if(gs.nil(deskGrpObjects)){
 			return null;
@@ -84,11 +96,28 @@ CTXDesktopGroup.prototype = {
 		var deskGrp;
 		var deskGrpSysId;
 		
+		var adGrpUtil = new CTXADGroup();		
+		var adGroupSysIds;
+		
 		for(var i = 0;i < deskGrpObjects.length; i++){
 			
 			deskGrp = this.getGroupByName(deskGrpObjects[i].Name);			
-			deskGrpSysId = (gs.nil(deskGrp)) ? this.createGroup(deskGrpObjects[i]) : deskGrp.getValue('sys_id');			
-			desktopGroupsSysIds += (desktopGroupsSysIds == '')? deskGrpSysId : "," + deskGrpSysId; 
+			
+			if(gs.nil(deskGrp)){
+				deskGrpSysId = this.createGroup(deskGrpObjects[i]);
+			}else{
+				
+				if(!gs.nil(deskGrpObjects[i].ADGroups)){
+					adGroupSysIds = adGrpUtil.processADGroups(deskGrpObjects[i].ADGroups);
+					if(!gs.nil(adGroupSysIds)){
+						this.updateGroup(deskGrp,'ad_groups',adGroupSysIds);
+					}					
+				}
+				deskGrpSysId = deskGrp.getValue('sys_id');
+			}
+			
+			desktopGroupsSysIds += (desktopGroupsSysIds == '')? deskGrpSysId : "," + deskGrpSysId;			
+			
 		}
 		
 		return desktopGroupsSysIds;
@@ -101,7 +130,7 @@ CTXDesktopGroup.prototype = {
         <sys_created_on>2018-07-17 21:34:18</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>db5b83eedbdbd700677d3437b996199d</sys_id>
-        <sys_mod_count>21</sys_mod_count>
+        <sys_mod_count>31</sys_mod_count>
         <sys_name>CTXDesktopGroup</sys_name>
         <sys_package display_value="Citrix IT Service Management Connector" source="x_cion_citrix_it_s">bb5ca9a2db9bd700677d3437b996190f</sys_package>
         <sys_policy>read</sys_policy>
@@ -109,6 +138,6 @@ CTXDesktopGroup.prototype = {
         <sys_scope display_value="Citrix IT Service Management Connector">bb5ca9a2db9bd700677d3437b996190f</sys_scope>
         <sys_update_name>sys_script_include_db5b83eedbdbd700677d3437b996199d</sys_update_name>
         <sys_updated_by>sebastiang</sys_updated_by>
-        <sys_updated_on>2018-07-18 23:02:38</sys_updated_on>
+        <sys_updated_on>2018-08-29 20:35:22</sys_updated_on>
     </sys_script_include>
 </record_update>

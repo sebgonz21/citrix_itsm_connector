@@ -59,28 +59,9 @@ CTXSrvcsCreds.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		}
 	},
 	
-	updateAPIUrlWithGeo:function(){
-		var logger = new Logger();
-		
-		var auth = new AuthToken();
-		var token = auth.getToken();
-		
-		var decodedToken = this._decodeToken(token);
-		if(gs.nil(decodedToken)){
-			logger.logError("Unable to decode token");
-			return;
-		}
-		
-		var customer_id = gs.getProperty('x_cion_citrix_it_s.customer_id');
-		var geo;
-		var customers = JSON.parse(decodedToken.customers);
-		
-		for(var i = 0;i < customers.length; i++){
-			
-			if(customers[i].CustomerId == customer_id){
-				geo = customers[i].Geo.toString().toLowerCase();
-			}
-		}
+	updateAPIUrlWithGeo:function(geo){
+		var logger = new Logger();		
+				
 		if(gs.nil(geo)){
 			logger.logError("Unable to update API URL");
 			return;
@@ -140,17 +121,18 @@ CTXSrvcsCreds.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 		var customer_id = this.getParameter('sysparm_customer_id');
 		var display_name = this.getParameter('sysparm_display_name');
 		var organization_id = this.getParameter('sysparm_organization_id');
+		var geo = this.getParameter('sysparm_geo');
 		
 		this._handleCustomerAuthenticationRecord(customer_id,display_name,organization_id);
 		
 		var adminTool = new CITSMCAdminTools();
 		adminTool.updateProperty("x_cion_citrix_it_s.customer_id",customer_id);
 		
-		this.updateAPIUrlWithGeo();
+		this.updateAPIUrlWithGeo(geo);
 		
 		return true;
-	},
-	
+	},		
+		
 	getCustomerID:function(){
 		var logger = new Logger();
 		
@@ -179,7 +161,8 @@ CTXSrvcsCreds.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 						customer = {
 							customer_id:customerList[i].name,
 							display_name: customerList[i].displayName,
-							organization_id: customerList[i].orgId
+							organization_id: customerList[i].orgId,
+							geo:customerList[i].geo
 						};
 						customers.push(customer);
 					}
@@ -190,9 +173,9 @@ CTXSrvcsCreds.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
 				logger.logError(customerIDResponse);
 				return this.CUSTOMERID_ERROR;
 			}
+		
 		}
-		
-		
+			
 	},
 	
 	
@@ -203,7 +186,7 @@ CTXSrvcsCreds.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_created_on>2018-07-17 16:57:34</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>abc25aa2dbdbd700677d3437b9961977</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>CTXSrvcsCreds</sys_name>
         <sys_package display_value="Citrix IT Service Management Connector" source="x_cion_citrix_it_s">bb5ca9a2db9bd700677d3437b996190f</sys_package>
         <sys_policy>read</sys_policy>
@@ -211,6 +194,6 @@ CTXSrvcsCreds.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
         <sys_scope display_value="Citrix IT Service Management Connector">bb5ca9a2db9bd700677d3437b996190f</sys_scope>
         <sys_update_name>sys_script_include_abc25aa2dbdbd700677d3437b9961977</sys_update_name>
         <sys_updated_by>sebastiang</sys_updated_by>
-        <sys_updated_on>2018-07-17 16:57:34</sys_updated_on>
+        <sys_updated_on>2018-08-29 14:19:50</sys_updated_on>
     </sys_script_include>
 </record_update>

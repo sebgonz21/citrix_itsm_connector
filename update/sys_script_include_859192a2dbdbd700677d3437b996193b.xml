@@ -17,7 +17,7 @@ CTXAppProvision.prototype = {
 		this.GET_APPS_HEADERS =  {
 			"Content-Type":"application/json",
 			"customerid":"",
-			"Authorization":"CWSAuth bearer="
+			"Authorization":"CWSAuth bearer="		
 		};
     },	
 	API_URL:'',
@@ -39,6 +39,7 @@ CTXAppProvision.prototype = {
 		
 		headers["customerid"] = customer_id;
 		headers["Authorization"] = authString;
+		
 		return headers;
 		
 	},
@@ -97,6 +98,7 @@ CTXAppProvision.prototype = {
 		var logger = new Logger();		
 		
 		var headers = this._generateAppHeaders();		
+		headers["siteid"] = siteId;
 		var rest = new RESTRequest();
 		var body = this._generateAssignAppRequestBody(users,application,deliveryGroup,siteId);
 		
@@ -112,7 +114,7 @@ CTXAppProvision.prototype = {
         <sys_created_on>2018-07-17 16:50:55</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>859192a2dbdbd700677d3437b996193b</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>7</sys_mod_count>
         <sys_name>CTXAppProvision</sys_name>
         <sys_package display_value="Citrix IT Service Management Connector" source="x_cion_citrix_it_s">bb5ca9a2db9bd700677d3437b996190f</sys_package>
         <sys_policy>read</sys_policy>
@@ -120,6 +122,6 @@ CTXAppProvision.prototype = {
         <sys_scope display_value="Citrix IT Service Management Connector">bb5ca9a2db9bd700677d3437b996190f</sys_scope>
         <sys_update_name>sys_script_include_859192a2dbdbd700677d3437b996193b</sys_update_name>
         <sys_updated_by>sebastiang</sys_updated_by>
-        <sys_updated_on>2018-07-19 22:11:02</sys_updated_on>
+        <sys_updated_on>2018-09-13 21:01:07</sys_updated_on>
     </sys_script_include>
 </record_update>

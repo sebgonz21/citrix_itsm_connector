@@ -101,6 +101,7 @@ app.controller('homeAppCtrl',function($scope,$http,$q,interceptor){
 		authAjax.addParam('sysparm_customer_id',$scope.customer.customer_id);
 		authAjax.addParam('sysparm_display_name',$scope.customer.display_name);
 		authAjax.addParam('sysparm_organization_id',$scope.customer.organization_id);
+		authAjax.addParam('sysparm_geo',$scope.customer.geo);
 		authAjax.getXML(savesResult);
 		
 	
@@ -602,7 +603,7 @@ app.service('interceptor',function($http){
         <sys_created_on>2018-07-17 16:27:57</sys_created_on>
         <sys_customer_update>true</sys_customer_update>
         <sys_id>d02c0222dbdbd700677d3437b99619b8</sys_id>
-        <sys_mod_count>18</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>ctx_getting_started</sys_name>
         <sys_package display_value="Citrix IT Service Management Connector" source="x_cion_citrix_it_s">bb5ca9a2db9bd700677d3437b996190f</sys_package>
         <sys_policy/>
@@ -610,6 +611,6 @@ app.service('interceptor',function($http){
         <sys_scope display_value="Citrix IT Service Management Connector">bb5ca9a2db9bd700677d3437b996190f</sys_scope>
         <sys_update_name>sys_ui_page_d02c0222dbdbd700677d3437b99619b8</sys_update_name>
         <sys_updated_by>sebastiang</sys_updated_by>
-        <sys_updated_on>2018-07-26 19:15:25</sys_updated_on>
+        <sys_updated_on>2018-08-29 14:16:32</sys_updated_on>
     </sys_ui_page>
 </record_update>
